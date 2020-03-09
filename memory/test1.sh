@@ -1,3 +1,3 @@
 #!/bin/bash
 cd build
-./test [roots]
+./tester [roots]
