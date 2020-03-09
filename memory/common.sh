@@ -3,4 +3,5 @@ cp ../../myheader.hpp .
 rm build -rf
 mkdir build && cd build && cmake ..
 make all
-make test
+cd ..
+chmod a+x ./test1.sh 
