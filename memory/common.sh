@@ -4,4 +4,4 @@ rm build -rf
 mkdir build && cd build && cmake ..
 make all
 cd ..
-chmod a+x ./test1.sh 
+chmod a+x ./test*.sh
