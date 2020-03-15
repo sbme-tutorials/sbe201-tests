@@ -158,32 +158,32 @@ TEST_CASE( "abs diff 3", "[abs]" ) {
 TEST_CASE( "sum abs diff 1", "[sumabs]" ) {
     double x1,x2,d,s;
     x1 = -5.4 ; x2 = 4;
-    sum_and_absolute_difference1( x1, x2 , &d, &s);
+    sum_and_absolute_difference1( x1, x2 , &s, &d);
     REQUIRE(  (d== 4 + 5.4 && s == x1 + x2 ));
     x1 = -10 ; x2 = 33 ;
-    sum_and_absolute_difference1( x1, x2, &d, &s) ;
+    sum_and_absolute_difference1( x1, x2 , &s, &d);
     REQUIRE( (d== 33 + 10 && s == x1 + x2) );
     x1 = -10 ; x2 = -33;
-    sum_and_absolute_difference1( x1, x2, &d, &s );
+    sum_and_absolute_difference1( x1, x2 , &s, &d);
     REQUIRE(  (d== 33 - 10 && s == x1 + x2));
     x1 = 109 ; x2 = 101/3.0;
-    sum_and_absolute_difference1( x1, x2, &d, &s );
+    sum_and_absolute_difference1( x1, x2 , &s, &d);
     REQUIRE(  (d== 109 - 101/3.0 && s == x1 + x2) );
 }
 
 TEST_CASE( "sum abs diff 2", "[sumabs]" ) {
     double x1,x2,d,s;
     x1 = -5.4 ; x2 = 4;
-    sum_and_absolute_difference2( x1, x2 , d, s);
+    sum_and_absolute_difference2( x1, x2 , s, d);
     REQUIRE(  (d== 4 + 5.4 && s == x1 + x2 ));
     x1 = -10 ; x2 = 33 ;
-    sum_and_absolute_difference2( x1, x2 , d, s);
+    sum_and_absolute_difference2( x1, x2 , s, d);
     REQUIRE( (d== 33 + 10 && s == x1 + x2) );
     x1 = -10 ; x2 = -33;
-    sum_and_absolute_difference2( x1, x2 , d, s);
+    sum_and_absolute_difference2( x1, x2 , s, d);
     REQUIRE(  (d== 33 - 10 && s == x1 + x2));
     x1 = 109 ; x2 = 101/3.0;
-    sum_and_absolute_difference2( x1, x2 , d, s);
+    sum_and_absolute_difference2( x1, x2 , s, d);
     REQUIRE(  (d== 109 - 101/3.0 && s == x1 + x2) );
 }
 
